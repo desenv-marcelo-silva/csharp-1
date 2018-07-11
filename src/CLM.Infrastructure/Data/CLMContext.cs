@@ -20,8 +20,14 @@ namespace CLM.Infrastructure.Data
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			// Configura o entity
+			#region Tabelas
+
 			modelBuilder.Entity<Medico>().ToTable("Medico");
 			modelBuilder.Entity<Paciente>().ToTable("Paciente");
+
+			#endregion
+
+			#region Alteração de campos
 
 			modelBuilder.Entity<Medico>()
 				.Property(e => e.CRM)
@@ -34,6 +40,8 @@ namespace CLM.Infrastructure.Data
 			modelBuilder.Entity<Paciente>()
 				.Property(e => e.email)
 				.HasColumnType("varchar(50)");
+
+			#endregion
 			//base.OnModelCreating(modelBuilder);
 		}
 	}
