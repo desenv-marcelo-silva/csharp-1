@@ -3,14 +3,16 @@ using CLM.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CLM.Infrastructure.Migrations
 {
     [DbContext(typeof(CLMContext))]
-    partial class CLMContextModelSnapshot : ModelSnapshot
+    [Migration("20180711011454_AdicionarPaciente")]
+    partial class AdicionarPaciente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,8 +26,7 @@ namespace CLM.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CRM")
-                        .HasColumnType("varchar(15)");
+                    b.Property<string>("CRM");
 
                     b.Property<string>("Nome");
 
@@ -40,13 +41,11 @@ namespace CLM.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Nome")
-                        .HasColumnType("varchar(50)");
+                    b.Property<string>("Nome");
 
                     b.Property<string>("Telefone");
 
-                    b.Property<string>("email")
-                        .HasColumnType("varchar(50)");
+                    b.Property<string>("email");
 
                     b.HasKey("PacienteId");
 
