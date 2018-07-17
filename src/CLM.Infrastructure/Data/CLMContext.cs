@@ -1,8 +1,6 @@
 ﻿using CLM.ApplicationCore.Entity;
+using CLM.Infrastructure.EntityConfig;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CLM.Infrastructure.Data
 {
@@ -29,17 +27,9 @@ namespace CLM.Infrastructure.Data
 
 			#region Alteração de campos
 
-			modelBuilder.Entity<Medico>()
-				.Property(e => e.CRM)
-				.HasColumnType("varchar(15)");
+			modelBuilder.ApplyConfiguration(new MedicoMapper());
 
-			modelBuilder.Entity<Paciente>()
-				.Property(e => e.Nome)
-				.HasColumnType("varchar(50)");
-
-			modelBuilder.Entity<Paciente>()
-				.Property(e => e.email)
-				.HasColumnType("varchar(50)");
+			modelBuilder.ApplyConfiguration(new PacienteMapper());
 
 			#endregion
 			//base.OnModelCreating(modelBuilder);
