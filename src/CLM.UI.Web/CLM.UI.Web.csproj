@@ -23,4 +23,8 @@
     <ProjectReference Include="..\CLM.Infrastructure\CLM.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\font-awesome\scss\" />
+  </ItemGroup>
+
 </Project>
