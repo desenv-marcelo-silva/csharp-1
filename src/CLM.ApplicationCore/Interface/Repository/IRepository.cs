@@ -5,8 +5,8 @@ using System.Text;
 
 namespace CLM.ApplicationCore.Interface.Repository
 {
-    public interface IRepository<TEntity> where TEntity : class
-    {
+	public interface IRepository<TEntity> where TEntity : class
+	{
 		TEntity Adicionar(TEntity entidade);
 		TEntity ObterPorId(int Id);
 		IEnumerable<TEntity> ObterTodos();

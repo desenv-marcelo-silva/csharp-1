@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CLM.Infrastructure.Data
 {
-    public class CLMContext : DbContext
-    {
+	public class CLMContext : DbContext
+	{
 		public CLMContext(DbContextOptions<CLMContext> options) 
 			: base(options)
 		{

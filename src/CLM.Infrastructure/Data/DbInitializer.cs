@@ -6,8 +6,8 @@ using System.Text;
 
 namespace CLM.Infrastructure.Data
 {
-    public static class DbInitializer
-    {
+	public static class DbInitializer
+	{
 		public static void Initialize(CLMContext context)
 		{
 			if (context.Pacientes.Any())
@@ -32,5 +32,5 @@ namespace CLM.Infrastructure.Data
 			context.AddRange(pacientes);
 			context.SaveChanges();
 		}
-    }
+	}
 }

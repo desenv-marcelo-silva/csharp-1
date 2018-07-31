@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CLM.ApplicationCore.Entity
+﻿namespace CLM.ApplicationCore.Entity
 {
-    public class Paciente
+	public class Paciente
     {
 		public Paciente()
 		{

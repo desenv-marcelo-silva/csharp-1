@@ -10,18 +10,9 @@ namespace CLM.UI.Web.Controllers
 			return View();
 		}
 
-		public IActionResult About()
+		public string TesteMeu()
 		{
-			ViewData["Message"] = "Your application description page.";
-
-			return RedirectToAction("Index");
-		}
-
-		public IActionResult Contact()
-		{
-			ViewData["Message"] = "Your contact page.";
-
-			return RedirectToAction("Index");
+			return "Estou na testemeu";
 		}
 	}
 }
