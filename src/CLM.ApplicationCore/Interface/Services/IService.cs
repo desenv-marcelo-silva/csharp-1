@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-
-namespace CLM.ApplicationCore.Interface.Repository
+﻿namespace CLM.ApplicationCore.Interface.Services
 {
-	public interface IRepository<TEntity> where TEntity : class
+	using System;
+	using System.Collections.Generic;
+	using System.Linq.Expressions;
+
+	public interface IService<TEntity> where TEntity : class
 	{
 		TEntity Adicionar(TEntity entidade);
 		TEntity ObterPorId(int Id);

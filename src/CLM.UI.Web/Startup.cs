@@ -1,4 +1,7 @@
-﻿using CLM.Infrastructure.Data;
+﻿using CLM.ApplicationCore.Entity;
+using CLM.ApplicationCore.Interface.Services;
+using CLM.Infrastructure.Data;
+using CLM.Infrastructure.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +24,7 @@ namespace CLM.UI.Web
 		{
 			services.AddDbContext<CLMContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 			// Add application services.
-
+			
 			services.AddMvc();
 		}
 

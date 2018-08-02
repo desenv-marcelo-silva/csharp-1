@@ -1,7 +1,7 @@
 ﻿namespace CLM.ApplicationCore.Entity
 {
-	public class Paciente
-    {
+	public class Paciente  
+	{
 		public Paciente()
 		{
 
