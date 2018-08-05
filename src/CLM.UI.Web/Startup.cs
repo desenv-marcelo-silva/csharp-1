@@ -1,6 +1,8 @@
 ﻿using CLM.ApplicationCore.Entity;
+using CLM.ApplicationCore.Interface.Repository;
 using CLM.ApplicationCore.Interface.Services;
 using CLM.Infrastructure.Data;
+using CLM.Infrastructure.Repository;
 using CLM.Infrastructure.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +28,10 @@ namespace CLM.UI.Web
 			// Add application services.
 			
 			services.AddMvc();
+			services.AddScoped<IMedicoRepository, MedicoRepository>();
+			services.AddScoped<IPacienteRepository, PacienteRepository>();
+			services.AddScoped<IMedicoService, MedicoService>();
+			services.AddScoped<IPacienteService, PacienteService>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,15 +1,15 @@
-﻿using CLM.Infrastructure.Service;
+﻿using CLM.ApplicationCore.Interface.Services;
+using CLM.Infrastructure.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CLM.UI.Web.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly MedicoService _medicoService;
+		private readonly IMedicoService _medicoService;
 
-		public HomeController()
+		public HomeController(IMedicoService medicoService)
 		{
-			MedicoService medicoService = new MedicoService()
 			_medicoService = medicoService;
 		}
 
