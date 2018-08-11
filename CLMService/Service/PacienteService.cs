@@ -1,12 +1,11 @@
-﻿namespace CLM.Infrastructure.Service
+﻿namespace CLMService.Service
 {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq.Expressions;
-	using CLM.ApplicationCore.Entity;
-	using CLM.ApplicationCore.Interface.Repository;
-	using CLM.ApplicationCore.Interface.Services;
-	using CLM.Infrastructure.Repository;
+	using CLMData.Entity;
+	using CLMData.Interface.Repository;
+	using CLMData.Interface.Services;
 
 	public class PacienteService : IPacienteService
 	{

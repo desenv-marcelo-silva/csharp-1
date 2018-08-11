@@ -1,8 +1,8 @@
-﻿using CLM.ApplicationCore.Entity;
-
-namespace CLM.ApplicationCore.Interface.Repository
+﻿namespace CLM.ApplicationCore.Interface.Repository
 {
-    public interface IMedicoRepository : IRepository<Medico>
-    {
-    }
+	using CLM.ApplicationCore.Entity;
+
+	public interface IMedicoRepository : IRepository<Medico>
+	{
+	}
 }

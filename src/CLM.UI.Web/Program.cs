@@ -1,4 +1,4 @@
-﻿using CLM.Infrastructure.Data;
+﻿using CLMData.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;

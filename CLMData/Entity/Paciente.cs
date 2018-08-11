@@ -1,6 +1,6 @@
-﻿namespace CLM.ApplicationCore.Entity
+﻿namespace CLMData.Entity
 {
-	public class Paciente  
+	public class Paciente
 	{
 		public Paciente()
 		{
@@ -9,7 +9,7 @@
 
 		public int PacienteId { get; set; }
 		public string Nome { get; set; }
-		public string email { get; set; }
+		public string Email { get; set; }
 		public string Telefone { get; set; }
 
 	}

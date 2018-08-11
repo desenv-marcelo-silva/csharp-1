@@ -1,15 +1,14 @@
-﻿using CLM.ApplicationCore.Interface.Repository;
-using CLM.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-
-
-namespace CLM.Infrastructure.Repository
+﻿namespace CLMData.Repository
 {
-	public class EFRepository<T> : IRepository<T> where T : class
+	using CLMData.Interface.Repository;
+	using CLMData.Data;
+	using Microsoft.EntityFrameworkCore;
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Linq.Expressions;
+
+	public abstract class EFRepository<T> : IRepository<T> where T : class
 	{
 
 		private readonly CLMContext _dbContext;

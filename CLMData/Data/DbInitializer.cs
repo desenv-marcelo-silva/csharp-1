@@ -1,9 +1,8 @@
-﻿using CLM.ApplicationCore.Entity;
-using System.Linq;
-
-
-namespace CLM.Infrastructure.Data
+﻿namespace CLMData.Data
 {
+	using CLMData.Entity;
+	using System.Linq;
+
 	public static class DbInitializer
 	{
 		public static void Initialize(CLMContext context)
@@ -17,12 +16,12 @@ namespace CLM.Infrastructure.Data
 			{
 				new Paciente {
 					Nome = "Jhon Doe",
-					email = "jhon.doe@email.com.br",
+					Email = "jhon.doe@email.com.br",
 					Telefone = "12 98822-3344"
 				},
 				new Paciente {
 					Nome = "Mary Doe",
-					email = "mary.doe@email.com.br",
+					Email = "mary.doe@email.com.br",
 					Telefone = "12 92288-4433"
 				}
 			};

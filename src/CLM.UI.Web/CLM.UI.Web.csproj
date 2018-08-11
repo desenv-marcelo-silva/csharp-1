@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CLM.ApplicationCore\CLM.ApplicationCore.csproj" />
-    <ProjectReference Include="..\CLM.Infrastructure\CLM.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\CLMData\CLMData.csproj" />
+    <ProjectReference Include="..\..\CLMService\CLMService.csproj" />
   </ItemGroup>
 
 </Project>

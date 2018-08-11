@@ -1,0 +1,33 @@
+﻿@model CLM.UI.Web.Models.MedicoViewModels.ListaMedicoViewModel
+
+<div id="lista-medico">
+	<h3>Listagem de médicos</h3>
+	<div id="lista">
+		<table id="medico">
+			<thead>
+				<tr>
+					<th>Código</th>
+					<th>Nome</th>
+					<th>CRM</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var medico in Model.Medicos)
+				{
+				<tr>
+					<td>
+						@medico.MedicoId;
+					</td>
+					<td>
+						@medico.Nome
+					</td>
+					<td>
+						@medico.CRM;
+					</td>
+				</tr>
+
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

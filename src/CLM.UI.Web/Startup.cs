@@ -1,14 +1,13 @@
-﻿using CLM.ApplicationCore.Entity;
-using CLM.ApplicationCore.Interface.Repository;
-using CLM.ApplicationCore.Interface.Services;
-using CLM.Infrastructure.Data;
-using CLM.Infrastructure.Repository;
-using CLM.Infrastructure.Service;
+﻿using CLMData.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using CLMData.Interface.Services;
+using CLMService.Service;
+using CLMData.Interface.Repository;
+using CLMData.Repository;
 
 namespace CLM.UI.Web
 {
@@ -24,7 +23,9 @@ namespace CLM.UI.Web
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddDbContext<CLMContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+			services.AddDbContext<CLMContext>(
+			options => options.UseSqlServer(
+			Configuration.GetConnectionString("DefaultConnection")));
 			// Add application services.
 			
 			services.AddMvc();

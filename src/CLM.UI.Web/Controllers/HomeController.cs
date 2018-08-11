@@ -1,22 +1,17 @@
-﻿using CLM.ApplicationCore.Interface.Services;
-using CLM.Infrastructure.Service;
-using Microsoft.AspNetCore.Mvc;
-
-namespace CLM.UI.Web.Controllers
+﻿namespace CLM.UI.Web.Controllers
 {
+	using Microsoft.AspNetCore.Mvc;
+
 	public class HomeController : Controller
 	{
-		private readonly IMedicoService _medicoService;
 
-		public HomeController(IMedicoService medicoService)
-		{
-			_medicoService = medicoService;
-		}
+		public HomeController() {}
 
 		public IActionResult Index()
 		{
-			return View(_medicoService.ObterTodos());
+			return View();
 		}
+
 
 		public string TesteMeu()
 		{

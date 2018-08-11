@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CLM.ApplicationCore.Entity
+﻿namespace CLMData.Entity
 {
-    public class Medico
-    {
+	public class Medico
+	{
 		public Medico()
 		{
 

@@ -1,9 +1,9 @@
-﻿using CLM.ApplicationCore.Entity;
-using CLM.Infrastructure.EntityConfig;
-using Microsoft.EntityFrameworkCore;
-
-namespace CLM.Infrastructure.Data
+﻿namespace CLMData.Data
 {
+	using CLMData.EnityConfig;
+	using CLMData.Entity;
+	using Microsoft.EntityFrameworkCore;
+
 	public class CLMContext : DbContext
 	{
 		public CLMContext(DbContextOptions<CLMContext> options) 
