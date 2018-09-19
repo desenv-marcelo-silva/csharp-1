@@ -1,0 +1,61 @@
+Estrutura de tabelas
+
+Agenda
+. Medico
+. Especialidade
+. Dia da semana (seg,ter,qua,qui,sex,sab,dom)
+. duracao da consulta
+. quantidade de consultas
+. horario de inicio
+
+Especialidade
+. id
+. descricao
+
+
+Exame
+. id
+. codigo
+. descricao
+
+ConsultaExame
+. exame
+. consulta
+. entregue
+. data da entrega
+
+Medicamento
+. id
+. nome generico
+. fabricante
+. nome comercial
+
+ConsultaMedicamento
+. medicamento
+. consulta
+. posologia
+
+Paciente
+. id
+. nome
+. responsavel
+. titulo do responsavel
+. data de nascimento
+. cpf
+. telefone
+
+Consulta
+. medico
+. queixas
+. paciente
+. data 
+. hora
+
+colaborador
+. id
+. descricao
+. nome
+. login
+. senha
+. tipo (medico, funcionario, administrador)
+. situacao (ativo ou inativo)
