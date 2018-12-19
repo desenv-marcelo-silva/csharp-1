@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using _1._ApresentacaoLayer.Models;
 
@@ -15,21 +11,33 @@ namespace _1._ApresentacaoLayer.Controllers
 			return View();
 		}
 
-		public IActionResult About()
+		public IActionResult Tabelas()
 		{
-			ViewData["Message"] = "Your application description page.";
+			ViewData["Message"] = "Tabelas";
+
+			return View();
+		}
+		public IActionResult Consultas()
+		{
+			ViewData["Message"] = "Consultas";
 
 			return View();
 		}
 
-		public IActionResult Contact()
+		public IActionResult Exames()
 		{
-			ViewData["Message"] = "Your contact page.";
+			ViewData["Message"] = "Exames";
+
+			return View();
+		}
+		public IActionResult Finalizar()
+		{
+			ViewData["Message"] = "Finalizar";
 
 			return View();
 		}
 
-		public IActionResult Privacy()
+		public IActionResult Privacidade()
 		{
 			return View();
 		}
