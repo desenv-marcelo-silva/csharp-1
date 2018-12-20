@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoogcXuwr0Ui2nRuZP1d02AAAAAACAAAAAAAQZgAAAAEAACAAAACVmohREUEoz2myx9FZMNS69tmU7a1V34rvosxX7wQQ2AAAAAAOgAAAAAIAACAAAACP8rSHI60s6PVYxlXdesh6FWc7YWoTUf4/1tON1HskEoAAAAAqdpty4yw5zztKAgR3m9eMwB3Yxh1Uv6wRPNHgON/nEur5nzVortyPaVpr5rB5BNnkK8DE4KDj9st5OGfZThPy+kRK2XsQyDxBAL+RSYBvWBsxNf1z1uq84mTpYOmp8EorfUSQm6Hs0xSe4nE2UjvoL35EmHF5MtJlMs3O5PsH1kAAAACU5rIgnARr8LFKbDVWJGH26Y5BlL3XnOUYjTjxNKdI1FMQRXNXk8quZVNKaBwpY8fiun+2N8nQCfJgUwyCIGjT</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ClinicaMedicaDB">
+      <Value>Server=tcp:msilva.database.windows.net,1433%3bInitial Catalog=clinica_medica%3bPersist Security Info=False%3bUser ID={your_username}%3bPassword={your_password}%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
