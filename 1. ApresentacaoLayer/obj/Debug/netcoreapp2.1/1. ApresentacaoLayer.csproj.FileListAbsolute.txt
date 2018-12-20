@@ -36,3 +36,4 @@ C:\Users\Marcelo\Documents\Visual Studio 2017\Projects\PUC\_tcc\ClinicaMedica\1.
 C:\Users\Marcelo\Documents\Visual Studio 2017\Projects\PUC\_tcc\ClinicaMedica\1. ApresentacaoLayer\obj\Debug\netcoreapp2.1\Razor\Views\Home\Finalizar.g.cshtml.cs
 C:\Users\Marcelo\Documents\Visual Studio 2017\Projects\PUC\_tcc\ClinicaMedica\1. ApresentacaoLayer\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacidade.g.cshtml.cs
 C:\Users\Marcelo\Documents\Visual Studio 2017\Projects\PUC\_tcc\ClinicaMedica\1. ApresentacaoLayer\obj\Debug\netcoreapp2.1\Razor\Views\Home\Tabelas.g.cshtml.cs
+C:\Users\Marcelo\Documents\Visual Studio 2017\Projects\PUC\_tcc\ClinicaMedica\1. ApresentacaoLayer\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

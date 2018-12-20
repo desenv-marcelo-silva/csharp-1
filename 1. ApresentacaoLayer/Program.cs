@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using DataLayer.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -31,8 +32,12 @@ namespace _1._ApresentacaoLayer
 			host.Run();
 		}
 
-		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-			WebHost.CreateDefaultBuilder(args)
-				.UseStartup<Startup>();
+		public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+		{
+			var assemblyName = typeof(Startup).GetTypeInfo().Assembly.FullName;
+
+			return WebHost.CreateDefaultBuilder(args)
+				.UseStartup(assemblyName);
+		}
 	}
 }
